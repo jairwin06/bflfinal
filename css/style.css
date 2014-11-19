@@ -1,0 +1,67 @@
+
+
+	#header {
+		box-sizing: border-box;
+		position: absolute;
+		top: 0%;
+		width: 100%;
+ 		text-align: center;
+ 		background-color: yellow;
+ 		padding: 12px;
+ 		height: 54px;
+ 	}
+
+ 	#sideNav {
+ 		box-sizing: border-box;
+ 		position: absolute;
+ 		top: 54px;
+ 		width: 248px;
+ 		padding-right: 12px;
+ 		border: 5px solid red;
+ 	}
+
+ 	#homeVid {
+ 		box-sizing: border-box;
+
+ 	}
+
+ 	#homeTextBox {
+ 		box-sizing: border-box;
+
+ 	}
+
+ 	#homeGallery {
+        box-sizing: border-box;
+
+ 	}
+
+ 	#mainVid {
+ 		box-sizing: border-box;
+ 		width: 800px;
+ 		margin: auto;
+ 	}
+
+ 	#comments {
+ 		box-sizing: border-box;
+ 	}
+
+ 	#annotations {
+ 		box-sizing: border-box;
+ 	}
+
+ 	#content {
+ 		font-family: 'ProximaNova-Regular';
+ 		font-size: .8em
+ 	}
+
+ 	ul {
+ 		list-style: square;
+ 	}
+
+ 	li {
+ 		font-family: 'ProximaNova-Regular';
+ 		font-size: .8em
+ 	}
+
+
+
