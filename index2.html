@@ -4,6 +4,7 @@
  	<title>Shiffman ICM Redesign</title>
 
  	<link rel="stylesheet" href="http://natureofcode.com/css/fonts.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
  	<!--<link rel="stylesheet" href="/css/style.css">-->
 
  	<style>
@@ -12,48 +13,51 @@
  		}
 
  		#header {
- 			position: absolute;
-			top: 0%;
-			left: 0%;
-			width: 100%;
-	 		text-align: center;
-	 		background-color: #FFC759;
-	 		padding: 5px;
-	 		height: 54px;
- 		}
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 60px;
+      background-color: #FFC759;
+    }
 
- 		#nav {
- 			position: absolute;
- 			top: 54px;
- 			left: 0%;
- 			width: 18%;
- 			height: 720px;
- 			text-align: left;
- 			padding: 20px;
- 			background-color: #74B3A7;
+    h1 {
+      color:#424143;
+      font-family:'Karla', sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      
+    }
 
- 		}
+#nav {
+      position: absolute;
+      top: 60px;
+      left: 0%;
+      width: 18%;
+      height: 1500px;
+      text-align: left;
+      background-color: #74B3A7;
+    }
 
  		#mainVid {
  			position: absolute;
- 			top: 54px;
+ 			top: 60px;
  			left: 18%;
  			width: 60%;
  			height: 426px;
- 			background-color: #ececec;
  		}
 
      #annotations {
        border-style: solid;
        border-color: white;
-       box-shadow: 2px 2px 2px #B0B0B0;
+       box-shadow: .5px .5px 5px #CBC9CF;
 
        position: absolute;
-       top: 54px;
-       left: 78%;
-       width: 22%;
+       top: 60px;
+       left: 72.2%;
+       width: 27.8%;
        height: 426px;
-       background-color: white;
+       overflow: hidden;
      }
 
  		#commentBox {
@@ -66,14 +70,34 @@
  			background-color: white;
  		}
 
+  .list {
+      color: #424143;
+      font-weight: bold;
+      font-family: 'Karla', sans-serif;
+      font-size: 1.2em;
+      padding: 30px;
+      line-height: 200%;
+    }
 
+ 	#highlighted {
+    color: white;
+  }
 
+  li {
+    list-style: square;
+    color: #CBC9CF;
+    font-family: 'Karla', sans-serif;
+    font-weight: normal;
+    padding-left: 15px;
+    line-height: 150%; 
+    font-size: .8em;
+  }
 
-
- 		.gallery {
- 			position: relative;
-
- 		}
+  #logo {
+      position: absolute;
+      top: 5px;
+      left: 30px;
+    }
 
 
  	</style>
@@ -82,12 +106,31 @@
 
  <body>
  	<div id="header">
- 		<p>INTRODUCTION TO COMPUTATIONAL MEDIA</p>
- 	</div>
+    <h1>ICM VIDEO SERIES</h1>
+  </div>
+
+  <div id="logo"><img src="processing.png" alt=Logo</a></div>
 
 	<div id="nav">
- 		<p>CHAPTERS GO HERE</p>
- 	</div>
+    <div class="list">
+        <div>>INTRODUCTION</div>
+        <div>>GETTING SET UP</div>
+        <div>>INTERACTION</div>
+        <div id="highlighted">>VARIABLES</div>
+        <div>
+          <li>Variables</li>
+          <li>Incrementing</li>
+          <li>Using random()</li>
+          <li>Using println()</li>
+        </div>
+        <div>>CONDITIONALS</div>
+        <div>>LOOPS</div>
+        <div>>FUNCTIONS</div>
+        <div>>OOP</div>
+        <div>>ARRAYS</div>
+    </div>
+    
+  </div>
 
  	<div id="mainVid">
      <object width="760" height="426"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=71113840&amp;force_embed=1&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=336699&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=71113840&amp;force_embed=1&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=336699&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="760" height="426"></embed></object>
@@ -96,7 +139,7 @@
  	</div>
 
    <div id="annotations">
-     <p>ANNOTATIONS GOES HERE</p>
+    <img src="code.jpg" alt=Oasis</a>
    </div>
 
 
