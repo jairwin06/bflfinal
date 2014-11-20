@@ -4,6 +4,7 @@
  	<title>Shiffman ICM Redesign</title>
 
  	<link rel="stylesheet" href="http://natureofcode.com/css/fonts.css"/>
+ 	<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
  	<!--<link rel="stylesheet" href="/css/style.css">-->
  	
  	<style>
@@ -16,27 +17,25 @@
 			top: 0%;
 			left: 0%;
 			width: 100%;
-	 		text-align: center;
+	 		height: 60px;
 	 		background-color: #FFC759;
-	 		padding: 5px;
-	 		height: 54px;
  		}
 
  		#nav {
  			position: absolute;
- 			top: 54px;
+ 			top: 60px;
  			left: 0%;
  			width: 18%;
- 			height: 720px;
+ 			height: 1500px;
  			text-align: left;
- 			padding: 20px;
  			background-color: #74B3A7;
 
  		}
 
  		#homeVid {
  			position: absolute;
- 			top: 54px;
+ 			box-shadow: 5px 10px 10px #CBC9CF;
+ 			top: 60px;
  			left: 18%;
  			width: 82%;
  			height: 426px;
@@ -48,16 +47,78 @@
  			top: 480px;
  			left: 18%;
  			width: 82%;
- 			height: 213px;
- 			padding: 20px;
- 			background-color: white;
+ 			height: 200px;
+ 			padding-top:10px;
+ 			padding-left: 20px;
+ 			margin: 10px;
+ 			padding-right: 40px;
  		}
 
- 		.gallery {
- 			position: relative;
+	 	.list {
+	 		color: #424143;
+	 		font-weight: bold;
+	 		font-family: 'Karla', sans-serif;
+	 		font-size: 1.2em;
+	 		padding: 30px;
+	 		line-height: 200%;
+	 	}
 
- 		}
+	 	.introVid {
+	 		position: absolute;
+	 		left: 13.25%;
+	 	}
 
+	 	ul {
+	 		color: #424143;
+	 		font-weight: bold;
+	 		font-family: 'Karla', sans-serif;
+	 		font-size: 1.2em;
+	 		padding: 4px;
+	 	}
+
+	 	p {
+	 		color: #807F83;
+	 		font-family: 'Karla', sans-serif;
+	 		font-size: .9em;
+	 	}
+
+	 	h1 {
+	 		color:#424143;
+	 		font-family:'Karla', sans-serif;
+	 		font-size: 1.4em;
+	 		text-align: center;
+		 	
+	 	}
+
+	 	#gallery {
+	 		position: absolute;
+	 		width: 24%;
+	 		top: 686px;
+	 		left: 20.5%;
+	 		height: 200px;
+	 		box-shadow: .5px .5px 5px #CBC9CF;
+	 		overflow: hidden;
+	 	}
+
+	 	#gallery2 {
+	 		position: absolute;
+	 		width: 24%;
+	 		top: 686px;
+	 		left: 45.5%;
+	 		height: 200px;
+	 		box-shadow: .5px .5px 5px #CBC9CF;
+	 		overflow: hidden;
+	 	}
+
+	 	#gallery3 {
+	 		position: absolute;
+	 		width: 24%;
+	 		top: 686px;
+	 		left: 70.5%;
+	 		height: 200px;
+	 		box-shadow: .5px .5px 5px #CBC9CF;
+	 		overflow: hidden;
+	 	}
 
  	</style>
 
@@ -65,21 +126,44 @@
 
  <body>
  	<div id="header">
- 		<p>INTRODUCTION TO COMPUTATIONAL MEDIA</p>
+ 		<h1>ICM VIDEO SERIES</h1>
  	</div>
 
 	<div id="nav">
- 		<p>CHAPTERS GO HERE</p>
+ 		<div class="list">
+ 				>INTRODUCTION<br>
+ 				>GETTING SET UP<br>
+ 				>INTERACTION<br>
+ 				>VARIABLES<br>
+ 				>CONDITIONALS<br>
+ 				>LOOPS<br>
+ 				>FUNCTIONS<br>
+ 				>OOP<br>
+ 				>ARRAYS<br>
+ 		</div>
  	</div>
 
  	<div id="homeVid">
- 		<p>VIDEO GOES HERE</p>
+ 		<img class="introVid" src="introVid.jpg" alt=Intro Video height="426"</a> 
  	</div>
 
 	<div id="homeContent">
- 		<p><strong>What is Processing and why learn it?</strong>Processing is a programming language and development environment that promotes software literacy within the visual arts and visual literacy within technology. If you don’t know programming, it’s a great language to start with: it’s visual, fun, there’s excellent documentation (online + several books), and there’s a vibrant online community of people asking and answering questions. If you do know programming, it’s great for image processing, data visualization, interactive programs, and open GL integration, and more.<br></p>
+ 		<p><strong>What is Processing and why learn it? </strong>Processing is a programming language and development environment that promotes software literacy within the visual arts and visual literacy within technology. If you don't know programming, it's a great language to start with: it's visual, fun, there's excellent documentation (online + several books), and there's a vibrant online community of people asking and answering questions. If you do know programming, it's great for image processing, data visualization, interactive programs, and open GL integration, and more.<br></p>
 
- 		<p><strong>About this site</strong>These videos were made by Daniel Shiffman for ICM (Introduction to Computational Media), a class that teaches Processing to first-year graduate students at NYU’s ITP, an interdisciplinary arts and technology program sometimes called “the center for the recently possible.”<br> The videos also loosely follows his book <a href="http://www.amazon.com/gp/product/0123736021/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0123736021&linkCode=as2&tag=shiffman-20">Learning Processing.</a></p>
+ 		<p><strong>About this site: </strong>These videos were made by Daniel Shiffman for ICM (Introduction to Computational Media), a class that teaches Processing to first-year graduate students at NYU's ITP, an interdisciplinary arts and technology program sometimes called "the center for the recently possible."<br> The videos also loosely follows his book <a href="http://www.amazon.com/gp/product/0123736021/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0123736021&linkCode=as2&tag=shiffman-20">Learning Processing.</a></p>
+
+ 		<p><font size="4" font-weight="bold">PROJECTS MADE WITH PROCESSING!</p>
  	</div>
+
+ 	<div id="gallery">
+ 		<a href="http://everyware.kr/home/portfolio/oasis/"><img src="gallery0.jpg" alt=Oasis</a>
+ 	</div>
+ 	<div id="gallery2">
+ 		<a href="http://www.quayola.com/strata3/"><img src="gallery1.jpg" alt=Strata3</a>
+ 	</div>
+ 	<div id="gallery3">
+ 		<a href="http://vimeo.com/19007123"><img src="gallery2.jpg" alt=Replica</a>
+ 	</div>
+
  </body>
 
